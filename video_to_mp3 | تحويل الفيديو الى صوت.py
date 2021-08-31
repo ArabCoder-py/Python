@@ -1,5 +1,4 @@
 # pip install moviepy
-# pip install ffmpeg
 # إضافة المكتبه اللازمة وإختصارها
 import moviepy.editor as mp
 # تحديد ملف الفيديو
