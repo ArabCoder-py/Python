@@ -1,4 +1,3 @@
-# pip install moviepy
 # إضافة المكتبه اللازمة وإختصارها
 import moviepy.editor as mp
 # تحديد ملف الفيديو
