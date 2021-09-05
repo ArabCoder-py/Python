@@ -1,13 +1,13 @@
 # pip install fpdf لتثبيت المكتبة
-# نضيق المكتبة
+# نضيف المكتبة
 from fpdf import FPDF
 import os
-# إنشاء ملف pdf جديد
+# جديد pdf إنشاء ملف
 pdf = FPDF()
 # لوضع كل صورة في صفحة جديدة
 pdf.set_auto_page_break(0)
 img_list = []
-# imgs هو الملف الذي يحتوي على الصور
+# هو الملف الذي يحتوي على الصور imgs 
 images = [x for x in os.listdir('imgs')]
 for i in images:
     i = "imgs/" + i
@@ -16,5 +16,5 @@ for i in images:
 for img in img_list:
     pdf.add_page()
     pdf.image(img)
-# حفظ ملف ال pdf
+# pdf حفظ ملف ال
 pdf.output("Images.pdf")
